@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #313131;
+}
+.content {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 27vw;
+  border-radius: 2vw;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.todoHedoing {
+  font-size: 2vw;
+  color: lightgreen;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#typeinput {
+  color: black;
+  background-color: yellow;
+  font-size: 1.3vw;
+  font-weight: 700;
+  padding: 1.5vw;
+  border-radius: 3vw;
+  margin-top: 1vw;
+  height: 3vw;
+  width: 22vw;
+  border: none;
+  outline: none;
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#typeinput::placeholder {
+  color: black;
+}
+.ul-content {
+  /* margin-top: 2vw; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  scrollbar-width: none;
+  overflow-y: scroll;
+  height: 60vh;
+  width: 100%;
+  /* background-color: pink; */
+}
+.fa-xmark {
+  font-weight: 800;
+  font-size: 2vw;
+  color: rgb(0, 255, 115);
+}
+li {
+  padding: 1vw;
+  font-size: 1.1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5vw;
+  list-style: none;
+  border-radius: 2vw;
+  background-image: linear-gradient(
+    85.2deg,
+    rgba(33, 3, 40, 1) 7.5%,
+    rgba(65, 5, 72, 1) 88.7%
+  );
+  color: #fff;
+  height: 2.5vw;
+  width: 22vw;
+  font-size: 1.5vw;
+  font-weight: 700;
+  box-shadow: 1px 1px 2px 2px #190f0f;
+}
+#crossBtn {
+  border: none;
+}
+#crossBtn:hover {
+  color: red;
+}
+
+.linethrow {
+  background-image: radial-gradient(
+    circle 1292px at -13.6% 51.7%,
+    rgba(0, 56, 68, 1) 0%,
+    rgba(163, 217, 185, 1) 51.5%,
+    rgba(255, 252, 247, 1) 88.6%
+  );
+  color: #fff;
+  text-decoration: line-through;
+}
+.red {
+  color: red;
+}
+#radio {
+  height: 1.1vw;
+  width: 1.1vw;
+}
+@media (max-width: 800px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+  .content {
+    height: 90vh;
+    width: 90vw;
+  }
+  .todoHedoing {
+    font-size: 10vw;
+    margin-bottom: 8vw;
+  }
+  #typeinput {
+    height: 12vw;
+    border-radius: 5vw;
+    width: 70vw;
+    font-size: 5vw;
+  }
+  li {
+    font-size: 5vw;
+    margin-top: 6vw;
+    height: 10vw;
+    width: 66vw;
+    padding: 4vw;
+  }
+  .fa-xmark {
+    font-size: 5vw;
+  }
+  #radio {
+    height: 4vw;
+    width: 4vw;
+  }
+}
